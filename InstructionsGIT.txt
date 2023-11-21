@@ -1,0 +1,64 @@
+git init
+touch f1.txt f2.txt
+git add f1.txt f2.txt
+git commit -m "Commit n1"
+#Modifier f1 & f2
+git add f1.txt f2.txt
+git commit -m "Commit n2"
+touch f3.txt f4.txt
+git add f3.txt f4.txt
+git commit -m "Commit n3"
+touch .gitignore
+<
+f3.txt
+f4.txt
+>
+git commit -m "Commit n4"
+touch f5.txt
+touch f6.txt
+git add f5.txt f6.txt
+git commit -m "Commit n5"
+
+git branch BrancheA
+git branch BrancheB
+
+git checkout BrancheA 
+touch f7.txt
+git add f7.txt
+git commit -m "Commit n6"t
+
+git checkout BrancheB 
+touch f8.txt
+git add f8.txt
+git commit -m "Commit n7"
+
+git checkout BrancheA 
+touch f9.txt
+git add f9.txt
+git commit -m "Commit n8"
+
+touch f10.txt
+git add f10.txt
+git commit -m "Commit n9"
+
+git checkout BrancheB
+touch f11.txt
+git add f11.txt
+git commit -m "Commit n10"
+
+git checkout BrancheB
+touch f12.txt
+git add f12.txt
+git commit -m "Commit n11"
+
+git checkout main 
+git push origin main
+
+git checkout BrancheA
+git push origin BrancheA
+
+git checkout BrancheB
+git push origin BrancheB
+
+
+
